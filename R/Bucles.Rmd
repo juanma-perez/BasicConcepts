@@ -1,0 +1,89 @@
+## Bucles
+Segmento de código que se repite 
+### Sentencia for
+Iteración por los valores de una secuencia 
+#### Estructura
+``` R
+for valor in secuencia:
+    bloque de código
+```
+#### Ejemplo
+```{r}
+for (n in c(1,2,3,4,5)){
+    print(n)
+}
+```
+#### Operador':'
+```{r}
+1:5
+```
+#### Iterar cadenas
+```{r}
+
+cadena <- 'Hola mundo, ¿Cómo estás?'
+for (letra in strsplit(cadena, '')){
+  print(letra)
+}
+```
+#### For anidados
+
+```{r}
+for (i in 1:5){
+    for (j in 1:5){
+        print(c(i,j))
+    }
+}
+```
+
+```{r}
+x = c("NIT","CC","NIT")
+num = c(531, 148, 963)
+aportes = c(10, NA, 40)
+consumo = c(NA, 40, NA)
+ifelse(x == "NIT", aportes, consumo)
+
+paste0(x, num)
+```
+
+### Sentencia 'while'
+
+Ejecución del codigo mientras se mantenga una condición
+
+#### Estructura
+``` R
+while condición:
+    bloque de código
+```
+
+#### Ejemplo
+```{r}
+iterador = 1
+while (iterador < 5){
+    print(iterador)
+    iterador = iterador +1
+}
+```
+
+#### Sentencia 'break'
+
+```{r}
+for (i in 1:5){
+    print(i)
+    if (i > 2){
+        break
+    }
+    print("----")
+}
+```
+```{r}
+iterador <- 1
+while (iterador < 5){
+    print(iterador)
+    if (iterador > 2){
+        break
+    }
+    iterador= iterador + 1
+    print("----")
+}
+```
+

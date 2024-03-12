@@ -1,0 +1,99 @@
+## Condicionales
+Segmentos de código que se ejecutan dependiendo el resultado de una operación booleana
+
+### Estructura
+``` r
+if (condición 1){
+  bloque código 1
+} else if (condición 2){
+  bloque código 2 
+  }
+...
+} else if (condición n){
+  bloque código n
+} else{
+  bloque de código n
+}
+
+```
+### Ejemplo:
+```{r}
+numero_dia_semana =  5 
+
+if (numero_dia_semana == 1){
+    print("Lunes")
+} else if (numero_dia_semana == 2){
+    print("Martes")
+} else if (numero_dia_semana == 3){
+    print("Miercoles")
+} else if ( numero_dia_semana == 4){
+    print("Jueves")
+} else if (numero_dia_semana == 5){
+    print("Viernes")
+} else if (numero_dia_semana == 6){
+    print("Sábado")
+} else if ( numero_dia_semana == 7){
+    print("Domingo")
+}else{ 
+    print("Número no valido")
+}
+```
+### Bloque vacio
+```{r}
+numero <- 20
+if (numero < 10){
+  {}
+} else if (numero < 15) {
+  {}
+} else{
+    print("Él número es mayor a 15")
+}
+```
+```{r}
+numero <- 20
+if (numero < 10){
+  next
+} else if (numero < 15) {
+  next
+} else{
+    print("Él número es mayor a 15")
+}
+```
+
+### Condicionales anidados
+```{r}
+numero_dia_semana <-  5 
+
+if (numero_dia_semana >= 1  & numero_dia_semana <= 7){
+    if (numero_dia_semana == 1){
+        print("Lunes")
+    } else if ( numero_dia_semana == 2){
+        print("Martes")
+    } else if ( numero_dia_semana == 3){
+        print("Miercoles")
+    } else if ( numero_dia_semana == 4){
+        print("Jueves")
+    } else if ( numero_dia_semana == 5){
+        print("Viernes")
+    } else if ( numero_dia_semana == 6){
+        print("Sábado")
+    } else if ( numero_dia_semana == 7){
+        print("Domingo")
+    }else {
+        {}
+    }
+} else {
+    print("Número no valido")
+}
+```
+
+### Condicionales con conversión de tipo de dato
+
+```{r}
+numero = 1
+if (numero %% 2){
+    print("Es impar")
+} else {
+    print("Es par")
+}
+```

@@ -1,1 +1,0 @@
-# Coneptos básicos en Python
